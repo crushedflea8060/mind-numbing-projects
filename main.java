@@ -1,7 +1,7 @@
-import java.io.*;      //the File class
-import java.util.*;    //the Scanner class
+import java.io.*;      
+import java.util.*;    
 
-public class Driver03
+public class Main
 {
     public static final int NUMITEMS = 20;
     
@@ -16,7 +16,7 @@ public class Driver03
             fahrenheit[x] = infile.nextDouble();
             celsius[x] = ((int)(100 * ((5 * (fahrenheit[x] - 32)) / 9.0))) / 100;
         }
-        try (FileWriter fileWriter = new FileWriter("main.java");
+        try (FileWriter fileWriter = new FileWriter("Main.java");
              BufferedWriter bufferedWriter = new BufferedWriter(fileWriter)) {
              bufferedWriter.write("Fahrenheit\t | Celsius\n");
              bufferedWriter.write("----------\t | --------------\n");
